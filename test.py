@@ -72,6 +72,9 @@ LogDF["conf_lower"] = y_predict_lowBound
 LogDF["conf_upper"] = y_predict_upBound
 LogDF["Alarm"] = (LogDF["true_temp"] < LogDF["conf_lower"]) | (LogDF["true_temp"] > LogDF["conf_upper"])
 print(LogDF.head())
-print("Alarm Time : ")
+
 print(LogDF[LogDF["Alarm"] == True])
+
+print("Hello World")
+print("Test")
 
